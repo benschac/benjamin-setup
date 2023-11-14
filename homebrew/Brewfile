@@ -42,6 +42,7 @@ brew "httpie"
 brew "httpstat"
 brew "gping"
 brew "tree"
+brew "vim", args: ["with-override-system-vi"]
 
 brew "withgraphite/tap/graphite"
 

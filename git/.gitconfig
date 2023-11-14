@@ -1,0 +1,62 @@
+[user]
+	email = benschac@gmail.com
+	user = benschac
+	name = benjamin
+[includeIf "gitdir:~/anon/"]
+    # https://dev.to/tastefulelk/conditional-git-profile-configuration-212b
+    path = ~/anon/.gitconfig
+[alias]
+	a = add .
+	ap = add -p
+	c = commit --verbose
+	ca = commit -a --verbose
+	cm = commit -m
+    cam = commit -a --amend
+	co = checkout
+    cob = checkout -b
+    # cam = commit -a -m
+	uncommit = reset --soft HEAD^
+    cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
+    m = checkout master
+	mm = checkout main
+    # the old one
+	; ri = "rebase -i"
+    ri = "!f() { git rebase -i @~"${1}"; }; f"
+	p = pull --rebase
+	temp = checkout -b delete origin/master
+	cp = cherry-pick
+	rc = rebase --continue
+	hash ="!git rev-parse --short HEAD | pbcopy"
+	upstream = '!git push -u origin HEAD'
+	publish="!git push -u origin $(git branch-name)"
+	# Delete the remote version of the current branch
+	unpublish = "!git push origin :$(git branch-name)"
+	# Interactively rebase all the commits on the current branch
+	rebase-branch = "!git rebase -i `git merge-base master HEAD`"
+	# Delete any branches that have been merged into master
+	# See also: https://gist.github.com/robmiller/5133264
+	delete-merged-branches = "!git co master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+	s=status -sb
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+	last=diff HEAD~1 HEAD
+	rv=remote -v
+	ds=diff --cached
+    d=diff -- .
+	dv=difftool -t vimdiff -y
+	gl=config --global -l
+	se=!git rev-list --all | xargs git grep -F
+  # list branches sorted by last modified
+    br = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+  # list aliase
+    cheat = "!git config -l | grep alias | cut -c 7-"
+[core]
+	editor = "code --wait"
+[push]
+	default = current
+[init]
+	defaultBranch = main
+[pull]
+	default = current
+[credential]
+	helper = osxkeychain
