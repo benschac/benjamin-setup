@@ -28,6 +28,7 @@ cask "tableplus"
 
 # Install
 # brew "supabase"
+brew "ansible"
 brew "sqlite"
 brew "cocoapods"
 brew "gh"
@@ -42,10 +43,12 @@ brew "httpie"
 brew "httpstat"
 brew "gping"
 brew "tree"
-brew "vim", args: ["with-override-system-vi"]
+brew "vim"
+# brew link "vim"
 
 brew "withgraphite/tap/graphite"
 
+# tap "tamagui/unistack"
 vscode "arcticicestudio.nord-visual-studio-code"
 vscode "ban.spellright"
 vscode "bierner.folder-source-actions"

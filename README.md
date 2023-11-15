@@ -64,3 +64,18 @@ https://docs.expo.dev/workflow/android-studio-emulator/
 - React DevTools
 - Vimium
 - 1password
+
+
+### Github
+
+- https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+`ssh-keygen -t ed25519 -C "benschac@gmail.com"`
+
+`eval "$(ssh-agent -s)"`
+
+`touch ~/.ssh/config`
+
+
+## TODO
+revisit git config
