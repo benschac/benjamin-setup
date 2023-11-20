@@ -65,7 +65,6 @@ https://docs.expo.dev/workflow/android-studio-emulator/
 - Vimium
 - 1password
 
-
 ### Github
 
 - https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
@@ -76,6 +75,10 @@ https://docs.expo.dev/workflow/android-studio-emulator/
 
 `touch ~/.ssh/config`
 
-
 ## TODO
+
 revisit git config
+
+## XCode
+
+expo - common issue: https://github.com/expo/expo/issues/21727#issuecomment-1471621054

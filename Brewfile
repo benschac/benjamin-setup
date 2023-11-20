@@ -1,8 +1,17 @@
 # set arguments for all 'brew install --cask' commands
 cask_args appdir: "~/Applications", require_sha: true
+tap "homebrew/cask"
+tap "buo/cask-upgrade"
+
+tap "homebrew/core"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "buo/cask-upgrade"
+brew "gnupg"
+brew "pinentry-mac"
+brew "mas"
 cask "raycast"
 cask "google-chrome"
-
 cask "1password"
 cask "arc"
 cask "visual-studio-code"
@@ -12,6 +21,7 @@ cask "google-chrome"
 cask "cron"
 cask "todoist"
 cask "linear-linear"
+cask "slack"
 cask "grammarly"
 cask "whatsapp"
 cask "docker"
@@ -24,13 +34,10 @@ cask "zoom"
 cask "android-studio"
 cask "notion"
 cask "tableplus"
-cask "blender"
 
-tap "oven-sh/bun"
-brew "bun"
+
 # Install
 # brew "supabase"
-brew "ansible"
 brew "sqlite"
 brew "cocoapods"
 brew "gh"
@@ -40,22 +47,21 @@ brew "htop"
 brew "jq"
 brew "xz"
 brew "tmate"
-brew "mas"
 brew "httpie"
 brew "httpstat"
 brew "gping"
 brew "tree"
-brew "vim"
-brew "vercel-cli"
-# brew link "vim"
+brew "openssh"
+brew "yarn"
+
+# mas signin "benschac@yahoo.com"
+# Xcode
+# mas 497799835
+
+
 
 brew "withgraphite/tap/graphite"
 
-# mas '1Password', id: 1333542190
-# mas '1Password', id: 1333542190
-# mas 'Slack', id: 803453959
-
-# tap "tamagui/unistack"
 vscode "arcticicestudio.nord-visual-studio-code"
 vscode "ban.spellright"
 vscode "bierner.folder-source-actions"
@@ -67,7 +73,6 @@ vscode "bierner.markdown-mermaid"
 vscode "bierner.markdown-preview-github-styles"
 vscode "bierner.markdown-yaml-preamble"
 vscode "biomejs.biome"
-vscode "ms-python.python"
 # Get private repo
 # vscode "calebporzio.simple-project-switcher"
 vscode "Chad.nord-operator-theme"

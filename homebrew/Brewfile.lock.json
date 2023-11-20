@@ -1,20 +1,20 @@
 {
   "entries": {
     "cask": {
-      "google-chrome": {
-        "version": "119.0.6045.159",
+      "raycast": {
+        "version": "1.62.1",
         "options": {
-          "full_name": "google-chrome",
+          "full_name": "raycast",
           "args": {
             "appdir": "~/Applications",
             "require_sha": true
           }
         }
       },
-      "raycast": {
-        "version": "1.61.2",
+      "google-chrome": {
+        "version": "119.0.6045.159",
         "options": {
-          "full_name": "raycast",
+          "full_name": "google-chrome",
           "args": {
             "appdir": "~/Applications",
             "require_sha": true
@@ -32,7 +32,7 @@
         }
       },
       "arc": {
-        "version": "1.15.2,43100",
+        "version": "1.17.2,43249",
         "options": {
           "full_name": "arc",
           "args": {
@@ -52,7 +52,7 @@
         }
       },
       "warp": {
-        "version": "0.2023.11.07.08.02.stable_00",
+        "version": "0.2023.11.14.08.02.stable_02",
         "options": {
           "full_name": "warp",
           "args": {
@@ -122,7 +122,7 @@
         }
       },
       "whatsapp": {
-        "version": "2.23.23.81",
+        "version": "2.23.23.82",
         "options": {
           "full_name": "whatsapp",
           "args": {
@@ -152,7 +152,7 @@
         }
       },
       "signal": {
-        "version": "6.38.0",
+        "version": "6.39.0",
         "options": {
           "full_name": "signal",
           "args": {
@@ -202,7 +202,7 @@
         }
       },
       "android-studio": {
-        "version": "2022.3.1.21",
+        "version": "2022.3.1.22",
         "options": {
           "full_name": "android-studio",
           "args": {
@@ -945,6 +945,54 @@
       "withgraphite/tap/graphite": {
         "version": "1.0.9",
         "bottle": false
+      },
+      "bun": {
+        "version": "1.0.13",
+        "bottle": false
+      },
+      "vercel-cli": {
+        "version": "32.5.5",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/vercel-cli/blobs/sha256:74137e312619abfb5f34679fb74f672a6da769ccc3912ced27ce3b7f63e69111",
+              "sha256": "74137e312619abfb5f34679fb74f672a6da769ccc3912ced27ce3b7f63e69111"
+            },
+            "arm64_ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/vercel-cli/blobs/sha256:74137e312619abfb5f34679fb74f672a6da769ccc3912ced27ce3b7f63e69111",
+              "sha256": "74137e312619abfb5f34679fb74f672a6da769ccc3912ced27ce3b7f63e69111"
+            },
+            "arm64_monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/vercel-cli/blobs/sha256:74137e312619abfb5f34679fb74f672a6da769ccc3912ced27ce3b7f63e69111",
+              "sha256": "74137e312619abfb5f34679fb74f672a6da769ccc3912ced27ce3b7f63e69111"
+            },
+            "sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/vercel-cli/blobs/sha256:e2c76444d7131fd55468e138fb98a715f6d587b9b235a3c2b40dd7e7df9d899b",
+              "sha256": "e2c76444d7131fd55468e138fb98a715f6d587b9b235a3c2b40dd7e7df9d899b"
+            },
+            "ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/vercel-cli/blobs/sha256:e2c76444d7131fd55468e138fb98a715f6d587b9b235a3c2b40dd7e7df9d899b",
+              "sha256": "e2c76444d7131fd55468e138fb98a715f6d587b9b235a3c2b40dd7e7df9d899b"
+            },
+            "monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/vercel-cli/blobs/sha256:e2c76444d7131fd55468e138fb98a715f6d587b9b235a3c2b40dd7e7df9d899b",
+              "sha256": "e2c76444d7131fd55468e138fb98a715f6d587b9b235a3c2b40dd7e7df9d899b"
+            },
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/vercel-cli/blobs/sha256:4cc4a437a2530a841dd41dd86ba5ff49d94f69e65b4076ad8dfae21795f6d804",
+              "sha256": "4cc4a437a2530a841dd41dd86ba5ff49d94f69e65b4076ad8dfae21795f6d804"
+            }
+          }
+        }
       }
     },
     "vscode": {
@@ -996,7 +1044,13 @@
       "Vue.volar": null,
       "whizkydee.material-palenight-theme": null,
       "yoavbls.pretty-ts-errors": null,
-      "yzhang.markdown-all-in-one": null
+      "yzhang.markdown-all-in-one": null,
+      "ms-python.python": null
+    },
+    "tap": {
+      "oven-sh/bun": {
+        "revision": "85279ea7f568a3ec09a1ad984c67c8e27658b06c"
+      }
     }
   },
   "system": {
