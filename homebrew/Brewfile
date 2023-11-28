@@ -1,5 +1,6 @@
 # set arguments for all 'brew install --cask' commands
 cask_args appdir: "~/Applications", require_sha: true
+
 cask "raycast"
 cask "google-chrome"
 
@@ -24,10 +25,15 @@ cask "zoom"
 cask "android-studio"
 cask "notion"
 cask "tableplus"
-cask "blender"
+cask "brave-browser"
+cask "shottr"
+cask "runjs"
+cask "cleanshot"
+# cask "blender"
 
 tap "oven-sh/bun"
 brew "bun"
+tap "supabase/tap"
 # Install
 # brew "supabase"
 brew "ansible"
@@ -47,6 +53,7 @@ brew "gping"
 brew "tree"
 brew "vim"
 brew "vercel-cli"
+brew "neovim"
 # brew link "vim"
 
 brew "withgraphite/tap/graphite"
@@ -108,7 +115,10 @@ vscode "Vue.volar"
 vscode "whizkydee.material-palenight-theme"
 vscode "yoavbls.pretty-ts-errors"
 vscode "yzhang.markdown-all-in-one"
-
+vscode "zixuanchen.vitest-explorer"
+vscode "this-fifo.natty"
+vscode "drcika.apc-extension"
+vscode "graphite.gti-vscode"
 
 
 
