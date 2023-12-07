@@ -29,6 +29,7 @@ cask "brave-browser"
 cask "shottr"
 cask "runjs"
 cask "cleanshot"
+cask "mongodb-compass"
 # cask "blender"
 
 tap "oven-sh/bun"
