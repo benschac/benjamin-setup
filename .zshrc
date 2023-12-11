@@ -159,3 +159,5 @@ esac
 export PATH="$HOME/bin:$PATH"
 source ~/.entropy.zshrc
 source $HOME/.asdf/asdf.sh
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"

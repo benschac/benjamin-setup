@@ -53,7 +53,7 @@ brew "gping"
 brew "tree"
 brew "openssh"
 brew "yarn"
-
+brew "openjdk@17"
 # mas signin "benschac@yahoo.com"
 # Xcode
 # mas 497799835

@@ -55,6 +55,7 @@ brew "tree"
 brew "vim"
 brew "vercel-cli"
 brew "neovim"
+brew "java"
 # brew link "vim"
 
 brew "withgraphite/tap/graphite"
