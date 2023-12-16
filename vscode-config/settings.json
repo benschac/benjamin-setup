@@ -1,5 +1,6 @@
 {
   "security.workspace.trust.untrustedFiles": "open",
+  "vim.experimentalOptimizations": true,
   /**
    * Better Defaults
    **/
@@ -10,6 +11,36 @@
   //   "schema": true
   // }
   // ],
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 17,
+      "y": 12
+    },
+    // This gets rid of that horid white frame around the electron window...
+    "transparent": true,
+    // This removes the less-horid, but still yucky stacking window shadow...
+    "hasShadow": false
+  },
+  "window.titleBarStyle": "native",
+  "workbench.colorCustomizations": {
+    "editor.background": "#0e172a",
+    "editorWidget.background": "#1f2738bb",
+    "editorHoverWidget.background": "#2d3750",
+    "sideBar.background": "#0e172a",
+    "sideBarSectionHeader.background": "#2a354b55",
+    "terminal.background": "#0e172a",
+    "editorLineNumber.activeForeground": "#586374",
+    "editorLineNumber.dimmedForeground": "#586374",
+    "editorLineNumber.foreground": "#58637466",
+    "scrollbarSlider.activeBackground": "#000c20",
+    "scrollbarSlider.background": "#000c20",
+    "scrollbarSlider.hoverBackground": "#000c20",
+    "sideBar.border": "#63697355"
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
   "typescript.validate.enable": true,
   "editor.emptySelectionClipboard": false,
   "window.newWindowDimensions": "inherit",
@@ -105,7 +136,7 @@
   //   "cSpell.advanced.feature.useReferenceProviderRemove": "/^#+\\s/"
   // },
   // "[javascript]": {
-  //   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   //   "editor.formatOnSave": true
   // },
   // "[typescript]": {
@@ -187,8 +218,6 @@
   // },
   // "editor.inlineSuggest.enabled": true,
   "editor.tabSize": 2,
-  // "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   // "tsErrorTranslator.showTLDRTranslation": true,
   // "editor.accessibilitySupport": "off",
   // "git.ignoreRebaseWarning": true,
@@ -234,7 +263,7 @@
   //     "value": "#42b883"
   //   }
   // ],
-  "simple-project-switcher.directory": "/Users/benjaminschachter",
+  "simple-project-switcher.directory": "/Users/benjamin",
   "editor.fontSize": 14,
   "workbench.sideBar.location": "right",
   "workbench.editorAssociations": {
@@ -242,8 +271,6 @@
   },
   "githubPullRequests.pullBranch": "never",
   "editor.wordWrap": "on",
-  "workbench.colorTheme": "Nord Operator Theme",
-  "workbench.activityBar.location": "hidden",
   "peacock.favoriteColors": [
     {
       "name": "Angular Red",
@@ -289,5 +316,11 @@
     "passing-generics-to-types"
   ],
   "totalTypeScript.hideAllTips": false,
-  "totalTypeScript.hideBasicTips": true
+  "totalTypeScript.hideBasicTips": true,
+  "update.mode": "manual",
+  // "[typescriptreact]": {
+  //   "editor.defaultFormatter": "biomejs.biome"
+  // },
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorTheme": "Dainty – Nord (chroma 3, lightness 0)"
 }
