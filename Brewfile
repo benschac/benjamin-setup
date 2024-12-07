@@ -4,6 +4,8 @@ tap "homebrew/cask"
 tap "buo/cask-upgrade"
 
 tap "homebrew/core"
+tap "homebrew/amie"
+tap "homebrew/chatgpt"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "buo/cask-upgrade"

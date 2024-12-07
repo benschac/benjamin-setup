@@ -82,3 +82,16 @@ revisit git config
 ## XCode
 
 expo - common issue: https://github.com/expo/expo/issues/21727#issuecomment-1471621054
+
+
+## Key Repeat
+
+```bash
+defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+```
+
+Disable press and hold
+```bash
+defaults delete -g ApplePressAndHoldEnabled    # Unset globally
+```
