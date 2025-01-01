@@ -95,3 +95,7 @@ Disable press and hold
 ```bash
 defaults delete -g ApplePressAndHoldEnabled    # Unset globally
 ```
+
+```bash
+defaults write -g ApplePressAndHoldEnabled -bool false
+```
